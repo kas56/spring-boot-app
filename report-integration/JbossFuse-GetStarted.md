@@ -22,9 +22,9 @@ Debug port: 5005
 ##Установить features
 В консоли ввести
 
-    features:install cxf-ws-security
-
-    features:install camel-dozer
+    features:install camel-jpa
+    features:install cxf
+    features:install camel-cxf
 
     feature:install hawtio
 
@@ -38,3 +38,7 @@ http://localhost:8181/hawtio
     Lodin: admin
     Password: admin
     
+
+
+## Полезные ссылки 
+https://github.com/jboss-fuse/quickstarts/tree/master/cxf/soap/src/main/java/io/fabric8/quickstarts/soap
