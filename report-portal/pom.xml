@@ -12,6 +12,9 @@
     <version>1.0-SNAPSHOT</version>
     <name>03 :: Rosatom report :: Portal</name>
 
+    <properties>
+        <camel.version>2.25.2</camel.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -83,6 +86,42 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-servlet-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jackson-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-swagger-java-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring-boot-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-ahc-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-timer-starter</artifactId>
+            <version>3.4.2</version>
+            <!-- use the same version as your Camel core version -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -93,5 +132,54 @@
             </plugin>
         </plugins>
     </build>
-
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>never</updatePolicy>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <id>fuse-public-repository</id>-->
+<!--            <name>FuseSource Community Release Repository</name>-->
+<!--            <url>https://repo.fusesource.com/nexus/content/groups/public</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>never</updatePolicy>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <id>red-hat-ga-repository</id>-->
+<!--            <name>Red Hat GA Repository</name>-->
+<!--            <url>https://maven.repository.redhat.com/ga</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>never</updatePolicy>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <id>red-hat-ea-repository</id>-->
+<!--            <name>Red Hat EA Repository</name>-->
+<!--            <url>https://maven.repository.redhat.com/earlyaccess/all</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>never</updatePolicy>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <id>jboss-ea-repository</id>-->
+<!--            <name>Red Hat JBoss Early Access Repository</name>-->
+<!--            <url>http://repository.jboss.org/nexus/content/groups/ea</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 </project>

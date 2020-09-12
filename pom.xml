@@ -13,14 +13,13 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>01::Rosatom report parent</name>
 	<description>Demo project</description>
+	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>8</java.version>
 	</properties>
 
 	<modules>
-		<module>report-common</module>
 		<module>report-portal</module>
-		<module>report-integration</module>
 	</modules>
 </project>

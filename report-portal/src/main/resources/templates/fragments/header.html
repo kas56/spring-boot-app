@@ -3,13 +3,15 @@
     <div th:fragment="header-css">
         <!-- this is header-css -->
         <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" />
-        <link rel="stylesheet" th:href="@{/css/main.css}" />
-        <script th:src="@{/resources/js/cryptopro/cadesplugin_api.js}"></script>
-        <script th:src="@{/resources/js/cryptopro/Code.js}"></script>
-        <script th:src="@{/resources/js/cryptopro/async_code.js}"></script>
     </div>
 </head>
 <body>
+<div th:fragment="header-js">
+    <script th:src="@{/resources/js/cryptopro/cadesplugin_api.js}"></script>
+    <script th:src="@{/resources/js/cryptopro/Code.js}"></script>
+    <script th:src="@{/resources/js/cryptopro/async_code.js}"></script>
+</div>
+
 <div th:fragment="header">
     <!-- this is header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
